@@ -1,0 +1,14 @@
+# ignore the .git folder
+.git
+
+# ignore the documentation folder; it contains LaTeX source files which are only
+# 	related to the rest of the environment in a human-readable context
+documentation
+
+# ignore the parent_containers directory; it contains the Dockerfiles for each
+# 	Docker image from which this one inherits
+parent_containers
+
+# ignore the post_push script; it is a leftover from the jupyter/all-spark-notebook
+# 	image from which the present one was forked and is no longer needed
+hooks/post_push

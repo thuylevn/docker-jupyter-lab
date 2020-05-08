@@ -1,0 +1,62 @@
+\documentclass{FDAdocument}
+
+%%% these definitions
+%%%     
+
+\title{Data Sharing Document}
+\author{}
+\date{26 Dec 2019}
+
+\pdfinfo{%
+  /Title    ()
+  /Author   ()
+  /Creator  ()
+  /Producer ()
+  /Subject  ()
+  /Keywords ()
+}
+
+\def \docTitleLineOne   {TITLE LINE 1}
+\def \docTitleLineTwo   {TITLE LINE 2}
+\def \docTitleLineThree {TITLE LINE 3}
+
+\def \docVersion        {\$VERSION}
+\def \docVersionDate    {\$VERSIONDATE}
+
+\def \docHeaderAgency {Food and Drug Administration}
+\def \docHeaderOffice {Office of Information and Management Technology}
+\def \docHeaderTitle {Document Title (Header)}
+
+\def \docFooterImage {./images/FDA_document_template_image003.png}
+
+
+\begin{document}
+
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+\subfile{FDAfirstpage.tex}
+
+\subfile{FDAversionhistory.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagebreak
+\def \contentsname {Table of Contents}
+\tableofcontents
+
+\pagebreak
+
+
+\subfile{section001.tex}
+\subfile{section002.tex}
+\subfile{section003.tex}
+
+
+
+\subfile{appendixA.tex}
+\subfile{appendixB.tex}
+\subfile{appendixC.tex}
+
+\end{document}

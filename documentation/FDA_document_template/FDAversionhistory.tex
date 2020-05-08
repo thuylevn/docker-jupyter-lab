@@ -1,0 +1,35 @@
+\documentclass[./FDA_document_template.tex]{subfiles}
+
+\begin{document}
+ 
+\def \arraystretch {1.5}
+
+\pagebreak
+\section*{Version History}
+\addcontentsline{toc}{section}{Version History}
+
+\begin{center}
+\tablefirsthead{%
+\hline
+{\centering \bf \small Version Number} &
+{\centering \bf \small Implemented By} &
+{\centering \bf \small Revision Date}  &
+{\centering \bf \small Approved By}  &
+\multicolumn{1}{c|}{\bf \small \centering \expandafter\begin{minipage}{3.25cm}{\expandafter\begin{center}{\vspace{1mm}Description and Reason for Change\vspace{1mm}}\expandafter\end{center}}\expandafter\end{minipage}} \\ \hline}
+
+\begin{supertabular}{|c|c|c|c|l|}
+\versionRecord{1.0}{Kyle Thomsen}{30 Apr 2020}{~}{adapted format from existing \LaTeX{} document and added sections according to my notes on the environment setup process}
+
+\versionRecord{1.1}{Kyle Thomsen}{04 May 2020}{~}{\begin{itemize}
+    \item migrated to subfiles-based \LaTeX{} source for modularity and better organization
+    \item reorganized document into parts based on environmental component functionality
+    \item began adding sections for each environmental component\
+    \item began adding, when possible, logos for the components within each part at its beginning in order to help readers quickly locate them
+    \item began adding intra-document hyperlinks to facilitate navigation
+                                                  \end{itemize}}
+\end{supertabular}
+\end{center}
+
+% \listoftodos
+
+\end{document}

@@ -1,0 +1,4 @@
+pandas
+jupyterlab-git
+jupyter_contrib_nbextensions
+notebook

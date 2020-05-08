@@ -1,0 +1,31 @@
+\documentclass[./FDA_document_template.tex]{subfiles}
+
+\begin{document}
+
+\renewcommand{\onlyinsubfile}[1]{#1}
+\renewcommand{\notinsubfile}[1]{}
+ 
+ %%% set section counter to (N-1) so it'll increment to the correct one
+% \setcounter{section}{0}
+\setcounter{part}{7}
+\pagestyle{Orchestration}
+
+\part{AWS Configuration}
+ 
+ 
+ 
+ \section{Subfile Section One}
+
+\lipsum[1]
+
+\subsection{First Subsection}
+
+\lipsum[2]
+
+\subsection{Second Subsection}
+
+\lipsum[3]
+
+\bigskip
+ 
+\end{document}

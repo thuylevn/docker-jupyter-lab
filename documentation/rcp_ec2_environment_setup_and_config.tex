@@ -1,0 +1,644 @@
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.6.1
+% see http://writer2latex.sourceforge.net for more info
+\documentclass[letterpaper]{article}
+\usepackage[ascii]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage{array}
+\usepackage{supertabular}
+\usepackage{hhline}
+\usepackage{hyperref}
+\hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=, pdfsubject=, pdfkeywords=}
+\usepackage[pdftex]{graphicx}
+\usepackage{ragged2e}
+\usepackage{morefloats}
+\usepackage{ulem}
+\usepackage{lipsum}
+\usepackage{todonotes}
+% \usepackage[nostamp]{draftwatermark}
+\usepackage{draftwatermark}
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{4.5}
+\SetWatermarkAngle{45}
+\SetWatermarkLightness{.85}
+\SetWatermarkHorCenter{.6\paperwidth}
+\SetWatermarkVerCenter{.6\paperheight}
+% Text styles
+\newcommand\textstyleInfoBlueChari[1]{\textrm{\textit{\textcolor{blue}{#1}}}}
+% Outline numbering
+\setcounter{secnumdepth}{1}
+\renewcommand\thesection{\arabic{section}}
+\makeatletter
+\newcommand\arraybslash{\let\\\@arraycr}
+\makeatother
+% Page layout (geometry)
+\setlength\voffset{-1in}
+\setlength\hoffset{-1in}
+\setlength\topmargin{1.27cm}
+\setlength\oddsidemargin{2.54cm}
+\setlength\textheight{20.522cm}
+\setlength\textwidth{16.509998cm}
+\setlength\footskip{2.4390001cm}
+\setlength\headheight{1.27cm}
+\setlength\headsep{1.169cm}
+% Footnote rule
+\setlength{\skip\footins}{0.119cm}
+\renewcommand\footnoterule{\vspace*{-0.018cm}\setlength\leftskip{0pt}\setlength\rightskip{0pt plus 1fil}\noindent\textcolor{black}{\rule{0.25\columnwidth}{0.018cm}}\vspace*{0.101cm}}
+
+\newcommand{\headerLeft}{\begin{minipage}[b]{.5\textwidth}{\footnotesize{\raggedright{\textbf{Food and Drug Administration \linebreak Office of Information Management and Technology}}\leftmark\\\rightmark\ }}\end{minipage}}
+\newcommand{\headerRight}{\begin{minipage}[b]{.5\textwidth}{\footnotesize{\raggedleft{\textbf{RCP EC2 Environment Setup and Configuration}}\leftmark\\\rightmark\ } }\end{minipage}}
+\newcommand{\combinedHeader}{\headerLeft \columnbreak \headerRight}
+% \newcommand{\OIMTfooter}{\includegraphics[width=.95\textwidth]{FDA_document_template_image003.png} \thepage }
+\newcommand{\OIMTfooter}{\centering{\includegraphics[width=\textwidth]{FDA_document_template_image003.png} \thepage} }
+
+
+% Pages styles
+\makeatletter
+\newcommand\ps@Standard{
+  \renewcommand\@oddhead{\combinedHeader}
+  \renewcommand\@evenhead{\@oddhead}
+  \renewcommand\@oddfoot{\OIMTfooter}
+  \renewcommand\@evenfoot{\@oddfoot}
+  \renewcommand\thepage{\arabic{page}}
+}
+\newcommand\ps@FirstPage{
+  \renewcommand\@oddhead{\includegraphics{FDA_document_template_image002.png}}
+  \renewcommand\@evenhead{\@oddhead}
+  \renewcommand\@oddfoot{}
+  \renewcommand\@evenfoot{}
+  \renewcommand\thepage{\arabic{page}}
+}
+\newcommand\ps@Convertediv{
+  \renewcommand\@oddhead{\combinedHeader}
+  \renewcommand\@evenhead{\@oddhead}
+  \renewcommand\@oddfoot{\OIMTfooter}
+  \renewcommand\@evenfoot{\@oddfoot}
+  \renewcommand\thepage{\arabic{page}}
+}
+\newcommand\ps@Convertediii{
+  \renewcommand\@oddhead{\combinedHeader}
+  \renewcommand\@evenhead{\@oddhead}
+  \renewcommand\@oddfoot{\OIMTfooter}
+  \renewcommand\@evenfoot{\@oddfoot}
+  \renewcommand\thepage{\arabic{page}}
+}
+\newcommand\ps@Convertedii{
+  \renewcommand\@oddhead{\combinedHeader}
+  \renewcommand\@evenhead{\@oddhead}
+  \renewcommand\@oddfoot{\OIMTfooter}
+  \renewcommand\@evenfoot{\@oddfoot}
+  \renewcommand\thepage{\arabic{page}}
+}
+\makeatother
+\pagestyle{Standard}
+\setlength\tabcolsep{1mm}
+\renewcommand\arraystretch{1.3}
+% List styles
+\newcommand\liststyleWWNumxxxiii{%
+% % % \renewcommand\labelitemi{[F0B7?]}
+% % % \renewcommand\labelitemii{o}
+% % % \renewcommand\labelitemiii{[F0A7?]}
+% % % \renewcommand\labelitemiv{[F0B7?]}
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\bullet$}
+\renewcommand\labelitemiii{$\bullet$}
+\renewcommand\labelitemiv{$\bullet$}
+}
+\title{}
+\author{}
+\date{30 Apr 2020}
+
+%%% this command creates an unnumbered section and adds it to the ToC
+\newcommand{\sectionUnnumbered}[1]{\section*{\expandafter#1}\addcontentsline{toc}{section}{\expandafter#1}}
+
+\begin{document}
+\clearpage\setcounter{page}{1}\pagestyle{Standard}
+\thispagestyle{FirstPage}
+
+\bigskip
+
+
+\bigskip
+
+
+\bigskip
+
+
+\bigskip
+
+
+\bigskip
+
+
+
+\begin{center}
+\includegraphics[width=16.51cm,height=3.958cm]{FDA_document_template_image001.png}
+\end{center}
+
+\vspace*{6cm}
+
+
+\begin{center}
+ 
+\textcolor{cyan}{\hrulefill}
+
+\textbf{\textcolor{blue}{DIMES DATA ANALYTICS}}
+\par
+
+
+% \textbf{\textcolor[rgb]{0.19607843,0.24313726,0.30980393}{Enterprise Performance LifeCycle}}
+% \par
+
+\color[rgb]{0.19607843,0.24313726,0.30980393}
+\textbf{RCP EC2 Environment Setup and Configuration\linebreak}
+\par
+
+\textcolor{cyan}{\hrulefill}
+\end{center}
+
+\vspace*{2cm}
+
+{\centering
+% Document Version: \textstyleInfoBlueChari{\textup{1.0}}
+Document Version: \textup{1.0}
+\par}
+
+{\centering
+Document Version Date: 30 Apr 2020
+\par}
+
+
+\bigskip
+
+
+\bigskip
+
+
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \clearpage\section*[Version History]{Version History}
+% \addcontentsline{toc}{section}{Version History}
+\clearpage\sectionUnnumbered{Version history}
+\hypertarget{Toc25593973}{}\begin{center}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{|m{2.25cm}|m{2.25cm}|m{2.5cm}|m{2.5cm}|m{5.75cm}|}
+\hline
+{\begin{center} {\bfseries\color{black} \small Version Number} \end{center}} &
+{\begin{center} {\bfseries\color{black} \small Implemented By} \end{center}} &
+{\begin{center} {\bfseries\color{black} \small Revision Date}  \end{center}} &
+{\begin{center} {\bfseries\color{black} \small Approved By}    \end{center}} &
+{\begin{center} {\bfseries\color{black} \small Description and Reason for Change} \end{center}}\\\hline
+{\centering{\small 1.0}} &
+{\centering{\small Kyle Thomsen}} &
+{\centering{\small 30 Apr 2020}} &
+~
+ &
+{\centering{\small adapted format from existing \LaTeX{} document and added sections according to my notes on the environment setup process}}\\\hline
+\end{supertabular}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage\setcounter{tocdepth}{2}
+\renewcommand\contentsname{Table of Contents}
+\tableofcontents
+
+\bigskip
+
+
+\bigskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \clearpage\section{Overview}
+\clearpage\sectionUnnumbered{Overview}
+\hypertarget{Toc25593975}{}
+\bigskip
+
+This document details the process of setting up the Amazon Web Services (AWS) Elastic Compute Cloud (EC2) environment for use as part of the Resource Capacity Planning (RCP) proof of concept (POC).  The ordering of the following sections reflects the intended execution order.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{AWS Configuration}
+% \hypertarget{Toc25593976}{}
+\bigskip
+
+\lipsum[1]
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{RHEL 8 on EC2}
+% \hypertarget{Toc25593977}{}
+\bigskip
+
+\lipsum[2]
+
+% \liststyleWWNumxxxiii
+% \begin{itemize}
+% \item 
+% % \end{itemize}
+% 
+% \bigskip
+% 
+% % \liststyleWWNumxxxiii
+% % \begin{itemize}
+% \item 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Python Configuration}
+% \hypertarget{Toc25593978}{}
+\bigskip
+
+\lipsum[3]
+
+
+% \begin{itemize}
+% 
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{R Configuration}
+% \hypertarget{Toc25593978}{}
+\bigskip
+
+\lipsum[4]
+
+
+% \begin{itemize}
+% 
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Spark and Scala Configuration}
+% \hypertarget{Toc25593978}{}
+\bigskip
+
+\lipsum[5]
+
+
+% \begin{itemize}
+% 
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Database Connections}
+% \hypertarget{Toc25593978}{}
+\bigskip
+
+\lipsum[6]
+
+
+% \begin{itemize}
+% 
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Docker Containers}
+% \hypertarget{Toc25593978}{}
+\bigskip
+
+\lipsum[7]
+
+
+% \begin{itemize}
+% 
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Environment Scaling}
+% \hypertarget{Toc25593978}{}
+\bigskip
+
+\lipsum[8]
+
+
+% \begin{itemize}
+% 
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \bigskip
+% 
+% \item 
+% 
+% 
+% \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage \pagestyle{Convertedii}
+\sectionUnnumbered{Appendix A: Key Terms }
+% \hypertarget{Toc25593979}{}
+\bigskip
+
+The following table provides definitions and explanations for terms and acronyms relevant to the content presented within this document.
+
+
+\bigskip
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{|m{3.917cm}|m{12.699cm}|}
+\hline
+\centering{\bfseries\color{black} Term} &
+\centering\arraybslash{\bfseries\color{black} Definition}\\\hline
+\centering ABC &
+Always Be C...autious?  Chaotic?  Charismatic?\\\hline
+\centering DEF &
+DEFinition?  DEFine?  DEFinitely could be a number of different things\\\hline
+\centering XYZ &
+the three spatial coordinate axes\\\hline
+\end{supertabular}
+\end{flushleft}
+
+\bigskip
+
+\clearpage\pagestyle{Convertediii}
+\sectionUnnumbered{Appendix B: References}
+% \hypertarget{Toc25593980}{}
+\bigskip
+
+The following table summarizes the documents referenced in this document.
+
+
+\bigskip
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{|m{4.234cm}|m{7.103cm}|m{5.1340003cm}|}
+\hline
+\centering{\bfseries\color{black} Document Name} &
+\centering{\bfseries\color{black} Description} &
+\centering\arraybslash{\bfseries\color{black} Location}\\\hline
+\centering Google &
+search engine &
+\url{https://www.google.com} 
+
+(accessed 30 Apr 2020)\\\hline
+~
+ &
+~
+ &
+~
+\\\hline
+~
+ &
+~
+ &
+~
+\\\hline
+\end{supertabular}
+\end{flushleft}
+
+\bigskip
+
+
+\bigskip
+
+
+\bigskip
+
+\clearpage\pagestyle{Convertediv}
+\sectionUnnumbered{Appendix C: System Design Document Approval }
+\hypertarget{Toc25593981}{}
+\bigskip
+
+
+\bigskip
+
+The undersigned acknowledge that they have reviewed the \textbf{RCP EC2 Environment Setup and Configuration} document and agree with the information presented within this document. Changes to this \textbf{RCP EC2 Environment Setup and Configuration} document will be coordinated with, and approved by, the undersigned, or their designated representatives.
+
+
+\bigskip
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{2.645cm}m{7.7460003cm}m{1.3859999cm}m{2.9789999cm}}
+Signature: &
+~
+ &
+Date: &
+~
+\\\hhline{~-~-}
+Print Name: &
+~
+ &
+~
+ &
+~
+\\\hhline{~-~~}
+~
+ &
+~
+ &
+~
+ &
+~
+\\\hhline{~-~~}
+Title: &
+~
+ &
+~
+ &
+~
+\\\hhline{~-~~}
+Role: &
+Project Manager &
+~
+ &
+~
+\\\hhline{~-~~}
+\end{supertabular}
+\end{flushleft}
+
+\bigskip
+
+
+\bigskip
+\end{document}

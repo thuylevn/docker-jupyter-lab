@@ -1,0 +1,98 @@
+\documentclass{FDAdocument}
+
+\usepackage{tocbibind}
+
+%%% these definitions
+%%%     
+
+\title{}
+\author{}
+\date{04 May 2020}
+
+\pdfinfo{%
+  /Title    (RCP POC Setup and Configuration)
+  /Author   (Kyle Thomsen)
+  /Creator  (Kyle Thomsen)
+  /Producer (Kyle Thomsen)
+  /Subject  (Technical Documentation)
+  /Keywords (cloud computing, FDA, data science)
+}
+
+\def \docTitleLineOne   {DIMES Data Analytics}
+\def \docTitleLineTwo   {Resource Capacity Planning Proof of Concept}
+\def \docTitleLineThree {Environment Setup and Configuration}
+
+\def \docVersion        {1.1}
+\def \docVersionDate    {04 May 2020}
+
+\def \docHeaderAgency {Food and Drug Administration}
+\def \docHeaderOffice {Office of Information and Management Technology}
+\def \docHeaderTitle {RCP POC Environment Setup/Config}
+
+\def \docFooterImage {./images/FDA_document_template_image003.png}
+
+
+\begin{document}
+
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+\subfile{FDAfirstpage.tex}
+
+\subfile{FDAversionhistory.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagebreak
+\def \contentsname {Table of Contents}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\pagebreak
+
+\phantomsection
+\addcontentsline{toc}{part}{Abstract}
+\vspace{\fill}
+
+\todoComment{add a real abstract/overview for this document}
+
+\begin{abstract}
+ This is an abstract abstract.  To abstract any further would just be absurd.
+\end{abstract}
+\vspace{\fill}
+
+\pagebreak
+
+
+\subfile{part001_aws.tex}
+\pagebreak
+\subfile{part002_linux.tex}
+\pagebreak
+\subfile{part003_programming_languages.tex}
+\pagebreak
+\subfile{part004_storage_and_databases.tex}
+\pagebreak
+\subfile{part005_computing.tex}
+\pagebreak
+\subfile{part006_visualization.tex}
+\pagebreak
+\subfile{part007_development.tex}
+\pagebreak
+\subfile{part008_orchestration.tex}
+\pagebreak
+\subfile{part009_security.tex}
+\pagebreak
+\subfile{part010_connections_and_compatibility.tex}
+\pagebreak
+\subfile{part011_data_science.tex}
+\pagebreak
+
+
+
+\subfile{appendixA_key_terms.tex}
+\subfile{appendixB_references.tex}
+\subfile{appendixC_approval.tex}
+
+\end{document}
