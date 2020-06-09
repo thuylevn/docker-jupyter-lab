@@ -25,9 +25,12 @@ COPY requirements.txt ./requirements.txt
 RUN python -m pip  install -r requirements.txt
 RUN python -m pip install --upgrade --no-deps --force-reinstall notebook
 #
+RUN python -m pip install jupyterlab-git
+RUN python -m pip install --upgrade jupyterlab-git
+RUN python -m pip install jupyter_contrib_nbextensions
+RUN python -m pip install --upgrade jupyter_contrib_nbextensions
 RUN python -m pip install jupyterthemes
 RUN python -m pip install --upgrade jupyterthemes
-RUN python -m pip install jupyter_contrib_nbextensions
 ########################
 #FROM python:3.7
 #FROM jupyter/minimal-notebook
@@ -56,6 +59,16 @@ RUN jupyter nbextension enable hide_input/main
 RUN jupyter nbextension enable spellchecker/main
 RUN jupyter nbextension enable toc2/main
 RUN jupyter nbextension enable toggle_all_line_numbers/main
+RUN jupyter nbextension enable jupyterlab-git
+
+########################
+### added the following line to set a password for the notebook server via the
+### $PASSWORD environment variable, called on the command line via
+### docker run ... -e PASSWORD=$PASSWORD ...
+###     -- Kyle Thomsen, 06 May 2020
+###
+### TODO: add logic to disallow empty password strings
+RUN jupyter notebook password $PASSWORD
 ########################
 
 # RSpark config
